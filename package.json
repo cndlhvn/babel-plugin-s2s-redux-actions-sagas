@@ -4,6 +4,7 @@
   "description": "generate redux actions sagas",
   "license": "MIT",
   "scripts": {
+    "build": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
