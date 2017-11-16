@@ -1,11 +1,3 @@
-// import {
-//   template
-// } from 's2s-utils'
-
-// const builders = {
-//   root: template(`export default OBJ`)
-// }
-
 module.exports = babel => {
   var t = babel.types;
   return {
@@ -38,14 +30,8 @@ module.exports = babel => {
             },
             ExportDefaultDeclaration(path){
               path.node.declaration.elements = actions
-              //path.remove()
             }
           })
-          // program.node.body.push(
-          //   t.ExportDefaultDeclaration(
-          //     t.ArrayExpression(actions)
-          //   )
-          // )
         }
       },
 
