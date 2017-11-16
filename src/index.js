@@ -1,7 +1,7 @@
 module.exports = babel => {
   var t = babel.types;
   return {
-    name: "s2s-redux-actions-sagas",
+    name: "s2s-redux-sagas",
     visitor: {
       Program: {
         exit(path, state){

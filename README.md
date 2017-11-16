@@ -1,16 +1,16 @@
-# babel-plugin-s2s-redux-actions-sagas
+# babel-plugin-s2s-redux-sagas
 
-> generate redux actions sagas
+> generate redux sagas
 
 ## Install
 
 ```
-$ yarn add --dev babel-plugin-s2s-redux-actions-sagas
+$ yarn add --dev babel-plugin-s2s-redux-sagas
 ```
 
-## Create redux-actions-sagas template
+## Create redux-sagas template
 
-You should create babel-plugin-s2s-redux-actions-sagas template. \
+You should create babel-plugin-s2s-redux-sagas template. \
 In your node project, you create a folder named templates in the same direcotry as the package.json
 
 `mkdir templates`
@@ -31,7 +31,7 @@ export default [];
 
 ## s2s.config.js
 
-s2s-redux-actions-sagas plugin watch the `src/sagas/*.js` files.
+s2s-redux-sagas plugin watch the `src/sagas/*.js` files.
 
 ```js
 module.exports = {
@@ -39,7 +39,7 @@ module.exports = {
   plugins: [
     {
        test: /src\/sagas\/(?!.*index).*\.js/,
-       plugin: ['s2s-redux-actions-sagas']
+       plugin: ['s2s-redux-sagas']
     }
   ],
   templates: [
