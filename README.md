@@ -24,7 +24,7 @@ Write this code.This is a template code.
 ```js
 import { put, call,takeLatest } from 'redux-saga/effects';
 import * as actions from '../actions';
-import * as api from '../api';
+import api from '../api';
 
 export default [];
 ```
@@ -64,7 +64,7 @@ When you create a `src/sagas/*.js`, the below code is inserted automatically.
 ```js
 import { put, call,takeLatest } from 'redux-saga/effects';
 import * as actions from '../actions';
-import * as api from '../api';
+import api from '../api';
 
 export default [];
 ```
@@ -76,7 +76,7 @@ In the saga file, type action name with camelcase such as `searchPokemon` and sa
 ```js
 import { put, call,takeLatest } from 'redux-saga/effects';
 import * as actions from '../actions';
-import * as api from '../api';
+import api from '../api';
 
 searchPokemon
 
@@ -90,7 +90,7 @@ It will be expanded like this.
 ```js
 import { put, call,takeLatest } from 'redux-saga/effects';
 import * as actions from '../actions';
-import * as api from '../api';
+import api from '../api';
 
 export function* handleSearchPokemon(action) {
   try {
